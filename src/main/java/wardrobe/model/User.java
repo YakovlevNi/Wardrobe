@@ -9,6 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
+
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,9 +23,18 @@ public class User {
     private String mail;
 
     @Column(nullable = false)
+    private String login;
+    @Column(nullable = false)
     private int phoneNumber;
     @Column
     private String sex;
 
+    @Column
+    private String password;
 
+
+    public User(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
 }
