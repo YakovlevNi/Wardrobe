@@ -12,10 +12,14 @@ public class RegistrationController {
     @Autowired
     private UserRepository userRepository;
 
+    // Страница входа
+
     @GetMapping("/auth")
     public String auth(Map<String, Object> model) {
         return "auth";
     }
+
+    // Главная страница
     @GetMapping("/")
     public String main (Map<String,Object>model){
         model.put("greetings","Hello, lets do our wardrobe api");
