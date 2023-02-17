@@ -43,14 +43,14 @@ public class UserController {
         userService.saveUser(user, username, form);
         return "redirect:/user";
     }
-
+// Страница профиля
     @GetMapping("profile")
     public String getProfile(Model model, @AuthenticationPrincipal User user) {
         model.addAttribute("username", user.getUsername());
         model.addAttribute("email", user.getMail());
         return "profile";
     }
-
+    // Страница профиля обновить
     @PostMapping("profile")
     public String updateProfile(@AuthenticationPrincipal User user, @RequestParam String password, @RequestParam String email) {
         userService.updateProfile(user, password, email);
