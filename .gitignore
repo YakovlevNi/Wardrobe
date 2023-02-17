@@ -30,4 +30,14 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
+
 .vscode/
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mustache</artifactId>
+	</dependency>
+
+	background-image: url('https://img4.goodfon.ru/original/1920x1080/d/6c/veshalka-odezhda-futbolki.jpg');
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: cover;
