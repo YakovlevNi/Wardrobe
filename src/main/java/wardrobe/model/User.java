@@ -28,16 +28,16 @@ public class User  implements UserDetails {
     @Column(columnDefinition = "VARCHAR(255)")
     private String username;
 
-    @Column(nullable = false)
+
     private String mail;
 
-    @Column(nullable = false)
+
     private String login;
-    @Column(nullable = false)
+
     private String password;
 
 
-    @Column
+
     private String activationCode;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)

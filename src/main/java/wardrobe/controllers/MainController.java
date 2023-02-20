@@ -22,13 +22,7 @@ public class MainController {
         return "main";
 
     }
-
-    @GetMapping("/auth")
-    public String auth(Map<String, Object> model) {
-        return "auth";
-    }
-
-    @GetMapping("/forgotpass")
+        @GetMapping("/forgotpass")
     public String forgotPass(Map<String, Object> model) {
         return "forgotpass";
     }
