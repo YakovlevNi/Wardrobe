@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title>Online wardrobe</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <style type="text/css">
+  body {
+	background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(https://burninghut.ru/wp-content/uploads/2020/01/instagram-magaziny-odezhdy.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+
+.form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: rgba(0,0,0,.7);
+}
+
+.form h1 {
+	margin: 30px 100px;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.input-form {
+	margin: 15px 40px;
+	text-align: center;
+}
+
+.input-form input {
+	padding: 10px;
+	width: 100%;
+	color: #fff;
+	font-size: 20px;
+	background: none;
+	outline: none;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+
+.input-form input[type="text"]:focus, .input-form input[type="password"]:focus {
+	border: 1px solid #949287;
+}
+
+.input-form input[type="submit"] {
+	margin-top: 20px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	background: #A52A2A;
+	transition: .3s;
+}
+
+.input-form input[type="submit"]:hover {
+	background: #A9A9A9;
+}
+
+.form a {
+	display: block;
+	padding: 0 0 30px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	transition: .3s;
+}
+
+.form a:hover {
+	color: #A9A9A9;
+}
+</style>
+</head>
+<body>
+
+
+<div class="form">
+  <h1>Онлайн гардероб</h1>
+  <div class="input-form">
+    <input type="text" placeholder="Логин/Email">
+  </div>
+
+  <div class="input-form">
+    <input type="password" placeholder="Номер телефона">
+  </div>
+  <div class="input-form">
+    <input type="submit" value="Отправить">
+  </div>
+</div>
+
+</body>
+</html>

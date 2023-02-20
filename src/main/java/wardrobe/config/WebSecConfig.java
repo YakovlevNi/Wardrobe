@@ -40,7 +40,7 @@ public class WebSecConfig {
                         .anyRequest().authenticated()
                 )
                 .formLogin((form) -> form
-                        .loginPage("/login")
+                        .loginPage("/registration")
                         .permitAll()
                 )
                 .logout((logout) -> logout.permitAll());
@@ -64,4 +64,6 @@ public class WebSecConfig {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userService).passwordEncoder(passwordEncoder);
     }
+
+
 }

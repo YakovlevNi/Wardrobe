@@ -28,6 +28,11 @@ public class MainController {
         return "auth";
     }
 
+    @GetMapping("/forgotpass")
+    public String forgotPass(Map<String, Object> model) {
+        return "forgotpass";
+    }
+
 
 
 

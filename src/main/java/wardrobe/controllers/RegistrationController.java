@@ -14,9 +14,9 @@ public class RegistrationController {
 
     // Страница входа
 
-    @GetMapping("/auth")
+    @GetMapping("/registration")
     public String auth(Map<String, Object> model) {
-        return "auth";
+        return "registration";
     }
 
     // Главная страница
@@ -24,6 +24,11 @@ public class RegistrationController {
     public String main (Map<String,Object>model){
         model.put("greetings","Hello, lets do our wardrobe api");
         return "main";
+    }
+
+    @GetMapping("/forgotpass")
+    public String forgotPass(Map<String, Object> model) {
+        return "forgotpass";
     }
 
   
